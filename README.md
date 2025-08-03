@@ -1,97 +1,52 @@
+# Huddle
+# (Pickup) - Find & Organize Pickup Games 🏏 🏀 ⚽️
 
-# React Native Project
+---
 
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using the React Native CLI.
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Getting Started
+A mobile app built with React Native and Firebase that helps sports enthusiasts find and organize local pickup games in their community. See a game on the map, RSVP with a tap, and get playing!
 
-### Running the App
+*(Insert a screenshot or GIF of your app here)*
 
-The development environment is already set up with all necessary dependencies. You can start developing right away!
+---
 
-#### Android
+## ✨ Features
 
-To run your app on Android:
+* **🗺️ Interactive Map View:** Discover nearby games visually on a map.
+* **⚡ Real-time RSVPs:** Player counts update instantly for everyone as users join or leave a game.
+* **🏀 Multi-Sport Support:** Organize games for any sport, from cricket and soccer to basketball and more.
+* **🔐 Secure Authentication:** Users can sign up and log in securely via Firebase Authentication.
+* **💬 Game Chat:** A simple, real-time chat for each individual game event.
+* **🔔 Push Notifications:** Get reminders for games you've joined.
+
+---
+## 🛠️ Tech Stack
+
+| Category      | Technology                                    |
+| ------------- | --------------------------------------------- |
+| **Frontend** | React Native                                  |
+| **Backend** | Firebase Cloud Functions (Node.js)            |
+| **Database** | Firestore (NoSQL)                             |
+| **Auth** | Firebase Authentication                       |
+| **Maps** | Google Maps Platform / Mapbox                 |
+| **State Mgt** | Zustand                                       |
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+### Prerequisites
+
+* [Node.js](https://nodejs.org/) (v18 or later)
+* [Watchman](https://facebook.github.io/watchman/) (for macOS)
+* An Android Emulator or physical device with debugging enabled.
+* A Firebase project.
+
+### 1. Clone the Repository
 
 ```bash
-npm run android
-```
-
-This will:
-1. Start the Metro bundler if it's not already running
-2. Build the Android app
-3. Install and launch it on the Android emulator
-
-#### iOS
-
-To run your app on iOS (requires macOS):
-
-```bash
-npm run ios
-```
-
-### Development
-
-The Metro bundler will start automatically when you run the app. If you need to start it manually:
-
-```bash
-npm start
-```
-
-### Testing and Linting
-
-Run tests:
-```bash
-npm test
-```
-
-Run linter:
-```bash
-npm run lint
-```
-
-## Project Structure
-
-```
-your-project/
-├── android/               # Android native code
-├── ios/                  # iOS native code
-├── src/                  # JavaScript/TypeScript source code
-│   ├── components/       # Reusable components
-│   ├── screens/         # Screen components
-│   └── App.tsx          # Application entry point
-├── __tests__/           # Test files
-├── .idx/                # IDX configuration
-└── package.json         # Project dependencies and scripts
-```
-
-## Useful Resources
-
-- [React Native Documentation](https://reactnative.dev/docs/getting-started)
-- [React Native CLI](https://github.com/react-native-community/cli)
-- [Metro Bundler](https://facebook.github.io/metro/)
-- [React Native Testing](https://reactnative.dev/docs/testing-overview)
-
-## Troubleshooting
-
-### Metro Bundler Issues
-If you encounter issues with Metro bundler:
-1. Clear Metro cache: `npm start --reset-cache`
-2. Make sure Watchman is running properly
-3. Check the terminal output for specific error messages
-
-### Android Build Issues
-If you encounter Android build issues:
-1. Check that ANDROID_HOME is properly set
-2. Ensure Android SDK tools are properly installed
-3. Try cleaning the build: `cd android && ./gradlew clean`
-
-### iOS Build Issues
-If you encounter iOS build issues:
-1. Make sure you have Xcode installed (macOS only)
-2. Try cleaning the build: `cd ios && pod install`
-3. Clear derived data in Xcode
-
-## License
-
-This project is open source and available under the MIT License.
+git clone [https://github.com/YOUR_USERNAME/pickup-app.git](https://github.com/YOUR_USERNAME/pickup-app.git)
+cd pickup-app
