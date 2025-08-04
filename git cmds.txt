@@ -1,0 +1,5 @@
+git status
+git add .
+git commit -m "API KEY SECURED GITIGNORED"
+git push
+git pull

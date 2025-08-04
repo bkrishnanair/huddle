@@ -1,0 +1,55 @@
+{
+  "buildFiles": [
+    "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+    "/home/user/huddle/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
+    "/home/user/huddle/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/user/.androidsdkroot/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/user/.androidsdkroot/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "artifactName": "react_codegen_safeareacontext",
+      "abi": "x86_64",
+      "output": "/home/user/huddle/android/app/build/intermediates/cxx/Debug/3lw1iz17/obj/x86_64/libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "/home/user/.gradle/caches/8.14.1/transforms/d72e83b2461edd281b6b7b42e2017bea/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.x86_64/libreactnative.so"
+      ]
+    },
+    "react_codegen_rnscreens::@25bcbd507e98d3a854ad": {
+      "artifactName": "react_codegen_rnscreens",
+      "abi": "x86_64",
+      "output": "/home/user/huddle/android/app/build/intermediates/cxx/Debug/3lw1iz17/obj/x86_64/libreact_codegen_rnscreens.so",
+      "runtimeFiles": [
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.x86_64/libreactnative.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/d72e83b2461edd281b6b7b42e2017bea/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so"
+      ]
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "x86_64",
+      "output": "/home/user/huddle/android/app/build/intermediates/cxx/Debug/3lw1iz17/obj/x86_64/libappmodules.so",
+      "runtimeFiles": [
+        "/home/user/huddle/android/app/build/intermediates/cxx/Debug/3lw1iz17/obj/x86_64/libreact_codegen_safeareacontext.so",
+        "/home/user/huddle/android/app/build/intermediates/cxx/Debug/3lw1iz17/obj/x86_64/libreact_codegen_rnscreens.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/d72e83b2461edd281b6b7b42e2017bea/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.x86_64/libfbjni.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/jsi/libs/android.x86_64/libjsi.so",
+        "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.x86_64/libreactnative.so"
+      ]
+    }
+  }
+}
