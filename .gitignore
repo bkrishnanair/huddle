@@ -1,21 +1,36 @@
 # Node
-node_modules/
+/node_modules/
 npm-debug.log
 yarn-error.log
-yarn-debug.log
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
 
 # Android
-android/app/build/
-android/build/
-android/.gradle/
-android/app/src/main/assets/
-android/app/google-services.json
+/android/build/
+/android/app/build/
+/android/app/.cxx/
 
-# iOS
-ios/build/
-ios/Pods/
-ios/GoogleService-Info.plist
+# Metro
+$TMPDIR/react-native-packager-cache-*
+$TMPDIR/metro-bundler-cache-*
 
-# Misc
+# Others
 .DS_Store
 *.pem
+.env

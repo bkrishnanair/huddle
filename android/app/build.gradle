@@ -1,3 +1,9 @@
+// The first line should be this
+project.ext.env = new Properties()
+if (file("../.env").exists()) {
+    project.ext.env.load(new FileInputStream(file("../.env")))
+}
+
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
@@ -85,6 +91,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        
+        // Add this line
+        resValue "string", "google_maps_api_key", (project.ext.env.GOOGLE_MAPS_API_KEY ?: "YOUR_API_KEY_HERE")
     }
     signingConfigs {
         debug {

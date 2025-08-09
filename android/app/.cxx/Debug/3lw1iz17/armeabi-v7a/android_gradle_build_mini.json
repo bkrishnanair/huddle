@@ -1,5 +1,7 @@
 {
   "buildFiles": [
+    "/home/user/huddle/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
@@ -29,6 +31,11 @@
         "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.armeabi-v7a/libreactnative.so"
       ]
     },
+    "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec": {
+      "artifactName": "react_codegen_rngesturehandler_codegen",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
     "react_codegen_rnscreens::@25bcbd507e98d3a854ad": {
       "artifactName": "react_codegen_rnscreens",
       "abi": "armeabi-v7a",
@@ -50,6 +57,11 @@
         "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/jsi/libs/android.armeabi-v7a/libjsi.so",
         "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.armeabi-v7a/libreactnative.so"
       ]
+    },
+    "react_codegen_RNMapsSpecs::@5748abef1962d24942ec": {
+      "artifactName": "react_codegen_RNMapsSpecs",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
     }
   }
 }

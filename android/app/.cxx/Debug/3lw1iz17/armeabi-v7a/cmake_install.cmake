@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/rngesturehandler_codegen_autolinked_build/cmake_install.cmake")
+  include("/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/RNMapsSpecs_autolinked_build/cmake_install.cmake")
   include("/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/safeareacontext_autolinked_build/cmake_install.cmake")
   include("/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/rnscreens_autolinked_build/cmake_install.cmake")
 

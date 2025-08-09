@@ -1,0 +1,3 @@
+heres whats dpne so farwrite the tech stack in this project why js ut choosen howit works 
+
+- Modified `App.tsx` to initialize Firebase and use the `AppNavigator`.

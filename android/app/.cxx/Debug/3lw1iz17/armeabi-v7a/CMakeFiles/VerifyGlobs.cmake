@@ -37,7 +37,32 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# LIB_CUSTOM_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:22 (file)
+# react_codegen_SRCS at /home/user/huddle/node_modules/react-native-maps/android/src/main/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/*.cpp")
+set(OLD_GLOB
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/RNMapsSpecs-generated.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
+endif()
+
+# react_codegen_SRCS at /home/user/huddle/node_modules/react-native-maps/android/src/main/jni/CMakeLists.txt:9 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/*.cpp")
+set(OLD_GLOB
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/ComponentDescriptors.cpp"
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/EventEmitters.cpp"
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/Props.cpp"
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/RNMapsSpecsJSI-generated.cpp"
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/ShadowNodes.cpp"
+  "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/react/renderer/components/RNMapsSpecs/States.cpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
+endif()
+
+# LIB_CUSTOM_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:12 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/*.cpp")
 set(OLD_GLOB
   )
@@ -46,7 +71,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# LIB_CUSTOM_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:22 (file)
+# LIB_CUSTOM_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:12 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp/react/renderer/components/safeareacontext/*.cpp")
 set(OLD_GLOB
   "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../../common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp"
@@ -57,7 +82,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# LIB_CODEGEN_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:23 (file)
+# LIB_CODEGEN_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:13 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/*.cpp")
 set(OLD_GLOB
   "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/safeareacontext-generated.cpp"
@@ -67,7 +92,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "/home/user/huddle/android/app/.cxx/Debug/3lw1iz17/armeabi-v7a/CMakeFiles/cmake.verify_globs")
 endif()
 
-# LIB_CODEGEN_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:23 (file)
+# LIB_CODEGEN_SRCS at /home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt:13 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext/*.cpp")
 set(OLD_GLOB
   "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/../../../build/generated/source/codegen/jni/react/renderer/components/safeareacontext/ComponentDescriptors.cpp"

@@ -1,5 +1,7 @@
 {
   "buildFiles": [
+    "/home/user/huddle/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/home/user/huddle/node_modules/react-native-maps/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native-screens/android/src/main/jni/CMakeLists.txt",
     "/home/user/huddle/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
@@ -31,6 +33,16 @@
         "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
         "/home/user/.gradle/caches/8.14.1/transforms/e1a55d683f866eb3e2b7e65ec0b290ee/transformed/react-android-0.80.2-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
       ]
+    },
+    "react_codegen_RNMapsSpecs::@5748abef1962d24942ec": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_RNMapsSpecs"
+    },
+    "react_codegen_rngesturehandler_codegen::@39f233abcd2c728bc6ec": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "react_codegen_rngesturehandler_codegen"
     },
     "react_codegen_rnscreens::@25bcbd507e98d3a854ad": {
       "toolchain": "toolchain",

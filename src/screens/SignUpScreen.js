@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Alert, KeyboardAvoidingView, Platform } from 'react-native';
 import auth from '@react-native-firebase/auth';
 
 const SignUpScreen = ({ navigation }) => {
@@ -33,7 +33,10 @@ const SignUpScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
       <Text style={styles.title}>Create Account</Text>
       <TextInput
         style={styles.input}
@@ -62,7 +65,7 @@ const SignUpScreen = ({ navigation }) => {
         title="Already have an account? Login"
         onPress={() => navigation.navigate('Login')}
       />
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 

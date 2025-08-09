@@ -1,0 +1,53 @@
+Developer Journal — Huddle App (Daily Progress: 2025-08-03)  - Day 1
+Accomplishments
+Built Login & Signup Screens: Designed and implemented LoginScreen.js and SignUpScreen.js with form validation and responsive UI.
+
+Integrated Firebase Authentication: Added email/password sign-up via createUserWithEmailAndPassword and login via signInWithEmailAndPassword, with basic error handling using Alert.
+
+Implemented Navigation: Set up AppNavigator.js using React Navigation (@react-navigation/native/@react-navigation/stack) to conditionally render auth or main app flows based on user state.
+
+Initialized Firebase: Modified App.tsx to initialize Firebase at app start, leveraging auto-config from google-services.json.
+
+Configured Android Build: Updated android/build.gradle and android/app/build.gradle to include Firebase dependencies (using BoM for consistency) and enabled Firebase Auth.
+
+Debugged Initialization Errors: Fixed RedBox errors—removed a redundant empty config in firebase.initializeApp(), resolved a misleading Cloud Storage message by correcting Firebase project settings, and enabled Email/Password auth in the Firebase Console.
+
+Resolved Blank Screen Issue: Diagnosed and fixed a white screen on app load by adding react-native-gesture-handler and wrapping AppNavigator in GestureHandlerRootView.
+
+Set Up Version Control: Initialized Git repository, set main branch, and pushed initial code securely (avoided exposing API keys).
+
+Validated Fixes: Confirmed authentication flows and navigation work as expected on Android emulator.
+
+Challenges & Solutions
+RedBox Errors: Persisted through multiple Firebase initialization attempts. Root cause was a mix of code and configuration issues—solved by aligning code with Firebase docs and updating project settings in the console.
+
+Blank Screen: Traced to missing react-native-gesture-handler and improper navigation root setup. Resolved by installing the dependency and updating App.tsx to use GestureHandlerRootView.
+
+Configuration Errors: Initially missed enabling Email/Password auth in Firebase Console, leading to “permission denied” errors. Quick fix in the console, no code change needed.
+
+Native Module Misconfiguration: Briefly attempted to modify MainActivity.kt based on outdated advice, but reverted after confirming the correct modern approach.
+
+Key Learnings
+Firebase Initialization: Best practice is to let the library auto-configure from google-services.json—no need for manual config object in most cases.
+
+React Navigation: Must use GestureHandlerRootView for gesture-driven navigators (e.g., stack) in React Native apps.
+
+Error Handling: Not all errors are code-related—some require configuration changes in the Firebase Console or build system.
+
+Security: Never commit API keys or sensitive configs to version control. Always use .gitignore and environment variables.
+
+Iterative Debugging: Many issues in mobile development are cross-cutting (code, config, dependencies). Methodical troubleshooting pays off.
+
+Next Steps
+Expand Auth: Add social login (Google, Apple) and password reset flows.
+
+Build Core Screens: Start on the map interface and event creation/listing.
+
+Enhance Error Handling: Add user-friendly messages and logging.
+
+Document Setup: Write a detailed README for onboarding new developers.
+
+CI/CD: Integrate GitHub Actions for automated builds and tests.
+
+
+Day 2 - Daily Progress: 2025-08-08

@@ -1,0 +1,34 @@
+journal for keeping track of daily dev changes :
+**Today's Development (2025-08-03):**
+
+LoginScreen.js` and `SignUpScreen.js` with basic UI and form validation.
+- Integrated Firebase Authentication using `@react-native-firebase/auth`.
+- Implemented sign-up with `createUserWithEmailAndPassword`.
+- Implemented login with `signInWithEmailAndPassword`.
+- Added basic error handling using `Alert`.
+- Created `AppNavigator.js` using `@react-navigation/native` and `@react-navigation/stack` to handle navigation based on authentication state.
+- Modified `App.tsx` to initialize Firebase and use the `AppNavigator`.
+- Configured Android project to work with Firebase by adding the `google-services` plugin dependency to `android/build.gradle` and applying the plugin to `android/app/build.gradle`.
+- Added Firebase Authentication dependency (`firebase-auth`) to `android/app/build.gradle` using the Firebase BoM.
+- Skipped iOS setup for now to focus on Android.
+- Ran the app on Android after placing the `google-services.json` file in `android/app`.
+
+- Fixed a RedBox error related to Firebase initialization in `/home/user/huddle/App.tsx`. The fix involved removing the empty object `{}` from the `firebase.initializeApp()` call, allowing the library to automatically pick up configuration from `google-services.json`.
+- Addressed a persistent RedBox error showing a misleading Cloud Storage message. The issue was identified as a configuration problem in the Firebase console, not in the code.
+- Enabled the Email/Password sign-in method in the Firebase project's Authentication settings via the Firebase Console. This was the root cause of the "permission denied" error when attempting to use authentication functions.
+- Confirmed that no code changes were required for the second fix; only a configuration update in the Firebase console was needed.
+- Verified the fixes by reloading the app on the emulator.
+
+
+git remote add origin`, `git branch -M main`, and `git push -u origin main`.
+- Addressed a blank white screen issue after fixing the RedBox error.
+- Identified the cause of the blank screen as the app rendering `null` while waiting for asynchronous processes, specifically related to React Navigation initialization.
+- Installed the missing dependency `react-native-gesture-handler` using `npm install react-native-gesture-handler`.
+- Imported `react-native-gesture-handler` in `index.js` to ensure it loads at the app's start.
+- Initially attempted to fix a native configuration issue for `react-native-gesture-handler` in `MainActivity.kt`, but this approach was based on older React Native versions.
+- Correctly resolved the blank screen issue by wrapping the `AppNavigator` component with `GestureHandlerRootView` in `App.tsx
+- resolved the mistake of pushing api key into gitrepo
+
+You are an assistant specialized in summarizing daily development activities. I will provide you with a text file containing my chat log with an AI code agent for today's work. Your task is to review this chat and create a clear, concise, and simple journal entry for today's development. Focus on what was implemented, built, or significant decisions made regarding the app's features or architecture. The entry should be easy to understand and serve as a quick reference for my progress
+
+**Today's Development (2025-08-08):**

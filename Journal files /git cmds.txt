@@ -1,0 +1,5 @@
+git status
+git add .
+git commit -m "feat: Implement initial map view and location tracking"
+git push
+git pull
